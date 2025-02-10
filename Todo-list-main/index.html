@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="./assets/js/index.js" defer></script>
+    <script src="./assets/js/theme.js" defer></script>
+    <title>Todo List</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Todo</h1>
+            <div class="navbar__theme">
+                <input type="checkbox" id="buttonTheme">
+                <label for="buttonTheme" class="change-theme"></label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="todo">
+            <form class="todo-field" id="todoForm">
+                <input type="checkbox">
+                <input type="text" id="todoInput" placeholder="Create a new todo...">
+            </form>
+
+            <ul class="todo__list">
+                <!-- Representação da tarefa na lista
+                <li class="todo__item">
+                    <input type="checkbox" id="checkbox">
+                    <label>Exercises</label>
+                    <i><img src="./assets/img/icon-cross.svg" id="remove" alt="Icone em formato de X"></i>
+                </li>  -->
+                <li class="todo__item-footer">
+                    <p id="items-left">items left</p>
+                    <div class="todo__taskbar-desktop">
+                        <button class="todo__button" id="all">All</button>
+                        <button class="todo__button" id="active">Active</button>
+                        <button class="todo__button" id="completed">Completed</button>
+                    </div>
+                    <button id="clearCompleted">Clear Completed</button>
+                </li>
+            </ul>
+
+            <div class="todo__taskbar">
+                <button class="todo__button" id="all">All</button>
+                <button class="todo__button" id="active">Active</button>
+                <button class="todo__button" id="completed">Completed</button>
+            </div>
+
+            <div class="todo__footer">
+                <p>Granpix</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
